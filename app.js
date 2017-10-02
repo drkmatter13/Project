@@ -12,7 +12,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1/project');
+mongoose.connect('mongodb://127.0.0.1/project', { useMongoClient: true });
 var db = mongoose.connection;
 
 var index = require('./routes/index');
@@ -79,5 +79,11 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+db.on('error', console.error.bind(console, 'Connection to Database: Error'));
+db.once('open', function() {
+  console.log('Connected to Database...');
+});
+
 
 module.exports = app;

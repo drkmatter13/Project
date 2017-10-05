@@ -2,7 +2,11 @@
 	<div class="text-center">
 		<h2 class="display-3  animated jackInTheBox">Welcome to iContact</h2>
 		<p class="display-5">Your personal contacts invertory system.</p>
-		<span><a class="regbtn btn btn-primary btn-sm" href="/users/register">Register</a></span>
+		{{#if user}}
+			<span><a class="regbtn btn btn-primary btn-sm" href="/">Dashboard</a></span>
+		{{else}}
+			<span><a class="regbtn btn btn-primary btn-sm" href="/users/register">Register</a></span>
+		{{/if}}
 	</div>
 </div>
 <div class="container">
@@ -34,22 +38,25 @@
 	<div class="row space">
 		<div class="col-sm-6">
 			<figure>
-				<img src="/images/gtar.jpg" alt="Marky" width="190px" height="200px">
+				<img class="rounded-circle" src="/images/gtar.jpg" alt="Marky" width="190px" height="200px">
 			</figure>
 			<div>
 				<h3>Mark Paulo A. Cube</h3>
 				<p><span>Developer <a target="_blank" href="https://www.facebook.com/markyangel13"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></span></p>
-				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+				<p>I've always dreamed to be an astronaut and go to outer space.
+
+				<br>I am currently on my 5th year as a BS Computer Engineering student in Polytechnic University of the Philippines Manila.</p>
+
 			</div>
 		</div>
 		<div class="col-sm-6">
 			<figure>
-				<img class="img-circle" src="/images/ben.png" alt="Benny" width="190px" height="200px">
+				<img class="rounded-circle" src="/images/ben.png" alt="Benny" width="190px" height="200px">
 			</figure>
 			<div>
 				<h3>Benito S. Mascariñas Jr.</h3>
 				<p><span>Co-Developer <a target="_blank" href="https://www.facebook.com/bingboi.mascarinas"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></span></p>
-				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+				<p>I love engineering especially electronics. I love to innovate and create new inventions that would help humanity. <br> I am studying BSCPE in PUP Manila.</p>
 			</div>
 		</div>
 	</div>

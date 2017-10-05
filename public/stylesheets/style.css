@@ -2,6 +2,37 @@
 body {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  background-color: #eeeeee;
+  color: #151514;
+}
+
+.regbtn {
+  background-color: #00c4f6;
+}
+
+.fa-facebook-official {
+  color: darkblue;
+}
+
+.fa-github {
+  color: black;
+}
+
+.text-color {
+  color: #575858;
+}
+
+.jumbotron {
+  background-color: #ffffff;
+  padding-top: 50px;
+}
+
+a {
+  color: #00c4f6;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .space {
@@ -18,7 +49,7 @@ body {
 /* Custom page header */
 .header {
   padding-bottom: 1rem;
-  border-bottom: .05rem solid #e5e5e5;
+  border-bottom: .05rem solid #aaaaaa;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -31,7 +62,7 @@ body {
 .footer {
   padding-top: 20px;
   color: #777;
-  border-top: .05rem solid #e5e5e5;
+  border-top: .05rem solid #aaaaaa;
 }
 
 /* Customize container */

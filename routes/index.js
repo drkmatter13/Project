@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', ensureAuthenticated, function(req, res, next) {
-  res.render('index', { title: 'Project' });
+  res.render('index', { title: 'Project', user: req.user });
 });
 
 function ensureAuthenticated(req, res, next){
@@ -14,5 +14,4 @@ function ensureAuthenticated(req, res, next){
 		res.redirect('/users/login');
 	}
 }
-
 module.exports = router;
